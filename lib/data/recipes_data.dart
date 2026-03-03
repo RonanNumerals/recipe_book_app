@@ -9,7 +9,7 @@ final List<Recipe> sampleRecipes = [
   ),
   Recipe(
     name: 'Chicken Quesadilla',
-    imagePath: 'assets/images/quesadilla.jpg',
+    imagePath: 'assets/images/chicken_quesadilla.jpg',
     ingredients: ['Tortillas', 'Chicken', 'Cheese', 'Shallot', 'Garlic', 'Jalapeno'],
     instructions: 'Season chicken and cook. Cook shallot, garlic, and jalapeno. Butter pan and add tortilla. Layer chicken, cheese, and shallot mixture. Top with another tortilla. Cook until golden and cheese is melted.',
   ),
