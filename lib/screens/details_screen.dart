@@ -20,6 +20,28 @@ class DetailsScreen extends StatelessWidget {
               width: double.infinity,
               fit: BoxFit.cover,
             ),
+            SizedBox(height: 10),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Ingredients", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                  for (var ingredient in recipe.ingredients) Text("- $ingredient"),
+                ],
+              ),
+            ),
+            SizedBox(height: 10),
+            Padding(
+              padding: const EdgeInsets.all(16.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text("Instructions", style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold)),
+                  Text(recipe.instructions),
+                ],
+              ),
+            ),
           ],
         ),
       ),

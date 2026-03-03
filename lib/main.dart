@@ -12,7 +12,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Recipe Book App',
-      home: home_screen(),
+      home: HomeScreen(),
     );
   }
 }
