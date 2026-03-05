@@ -10,11 +10,13 @@ class DetailsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color.fromARGB(255, 214, 162, 95),
+      // The app bar displays the name of the recipe, providing context for the details being shown on this screen.
       appBar: AppBar(title: Text(recipe.name), backgroundColor: const Color.fromARGB(255, 95, 214, 174)),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            // The recipe image is displayed at the top of the details screen.
             ClipRRect(
               borderRadius: BorderRadius.circular(12),
               child: Image.asset(
@@ -25,6 +27,7 @@ class DetailsScreen extends StatelessWidget {
               )
             ),
             SizedBox(height: 10),
+            // The ingredients are displayed in a section with a title and a list of ingredients.
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
@@ -36,6 +39,7 @@ class DetailsScreen extends StatelessWidget {
               ),
             ),
             SizedBox(height: 10),
+            // The instructions are displayed below the ingredients, allowing the user to read through the steps to prepare the recipe.
             Padding(
               padding: const EdgeInsets.all(16.0),
               child: Column(
