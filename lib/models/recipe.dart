@@ -1,3 +1,4 @@
+// Here is the Recipe model class that defines the structure of a recipe object, including its name, image path, ingredients, and instructions.
 class Recipe {
   final String name;
   final String imagePath;
