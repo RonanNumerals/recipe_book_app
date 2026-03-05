@@ -9,16 +9,20 @@ class DetailsScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text(recipe.name)),
+      backgroundColor: const Color.fromARGB(255, 214, 162, 95),
+      appBar: AppBar(title: Text(recipe.name), backgroundColor: const Color.fromARGB(255, 95, 214, 174)),
       body: SingleChildScrollView(
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
-            Image.asset(
-              recipe.imagePath,
-              height: 220,
-              width: double.infinity,
-              fit: BoxFit.cover,
+            ClipRRect(
+              borderRadius: BorderRadius.circular(12),
+              child: Image.asset(
+                recipe.imagePath,
+                height: 220,
+                width: double.infinity,
+                fit: BoxFit.cover,
+              )
             ),
             SizedBox(height: 10),
             Padding(

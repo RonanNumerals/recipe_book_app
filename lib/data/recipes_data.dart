@@ -11,7 +11,7 @@ final List<Recipe> sampleRecipes = [
     name: 'Chicken Quesadilla',
     imagePath: 'assets/images/chicken_quesadilla.jpg',
     ingredients: ['Tortillas', 'Chicken', 'Cheese', 'Shallot', 'Garlic', 'Jalapeno', 'Butter', 'Salt', 'Garlic powder', 'Cumin'],
-    instructions: 'Season chicken and cook. Cook shallot, garlic, and jalapeno. Butter pan and add tortilla. Layer chicken, cheese, and shallot mixture. Top with another tortilla. Cook until golden and cheese is melted.',
+    instructions: 'Season chicken and cook. Cook shallot and garlic. Butter pan and add tortilla. Layer chicken, cheese, jalapeno, and shallot mixture. Top with another tortilla. Cook until golden and cheese is melted.',
   ),
   Recipe(
     name: 'Simple Ramen',
